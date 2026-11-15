@@ -2,6 +2,11 @@
 
 # QuectoERP
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="brand/logo/quectoerp-logo-on-dark.svg">
+  <img src="brand/logo/quectoerp-logo.svg" alt="QuectoERP" height="72">
+</picture>
+
 **O menor ERP capaz de gerir uma empresa inteira.**
 
 O QuectoERP é um ERP open source ultra-minimalista, feito de serviços pequenos e rápidos, com orçamento de recursos medido. O mesmo código roda como binário único on-premises ou como serviços independentes na nuvem.
