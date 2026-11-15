@@ -1,0 +1,22 @@
+{
+  "$comment": "Single source of truth for the QuectoERP brand. Edit this file and run `python3 brand/scripts/build.py` (and `node brand/scripts/rasterize.mjs` for PNG/ICO). See brand/README.md.",
+  "name": "QuectoERP",
+  "symbol": "particle",
+  "palette": "amber",
+  "palettes": {
+    "amber":  { "label": "Amber",  "ink": "#1C1917", "accent": "#F2A900", "paper": "#FFF8E8" },
+    "teal":   { "label": "Teal",   "ink": "#0F2A2A", "accent": "#0F766E", "paper": "#E6F4F1" },
+    "indigo": { "label": "Indigo", "ink": "#1E1A3C", "accent": "#5B45E0", "paper": "#EEEBFF" }
+  },
+  "status": {
+    "success": "#15803D",
+    "warning": "#B45309",
+    "danger":  "#C2261D",
+    "info":    "#2563EB"
+  },
+  "typography": {
+    "sans": ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+    "mono": ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"]
+  },
+  "radius": { "symbol": 14, "favicon": 12 }
+}
