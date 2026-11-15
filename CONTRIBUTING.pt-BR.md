@@ -91,4 +91,4 @@ Use seu nome real e um e-mail que seja seu. Para corrigir commits sem a assinatu
 
 ## Licença
 
-Ao contribuir, você concorda que suas contribuições serão licenciadas sob a [GNU General Public License v3.0](LICENSE), a mesma licença do projeto.
+Ao contribuir, você concorda que suas contribuições serão licenciadas sob a [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0), a mesma licença do projeto.

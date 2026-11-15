@@ -91,4 +91,4 @@ Do **not** open public issues for vulnerabilities. Follow the [security policy](
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the [GNU General Public License v3.0](LICENSE), the same license as the project.
+By contributing, you agree that your contributions will be licensed under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0), the same license as the project.

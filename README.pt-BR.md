@@ -57,4 +57,4 @@ O QuectoERP é um projeto **clean-room**: nunca envie código, estruturas de ban
 
 ## Licença
 
-O QuectoERP é licenciado sob a [GNU General Public License v3.0](LICENSE).
+O QuectoERP é licenciado sob a [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0). Se você modificar o QuectoERP e oferecê-lo a outras pessoas, inclusive como serviço pela rede, precisa disponibilizar o seu código-fonte sob a mesma licença.

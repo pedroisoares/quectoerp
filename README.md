@@ -57,4 +57,4 @@ QuectoERP is a **clean-room** project: never submit code, database structures, n
 
 ## License
 
-QuectoERP is licensed under the [GNU General Public License v3.0](LICENSE).
+QuectoERP is licensed under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0). If you modify QuectoERP and offer it to others, including as a service over a network, you must make your source code available under the same license.
