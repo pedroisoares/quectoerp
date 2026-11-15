@@ -9,7 +9,7 @@ QuectoERP is an ultra-minimal, open source ERP built from tiny, fast services wi
 > **quecto** (symbol **q**, factor **10⁻³⁰**) is the smallest prefix in the International System of Units, adopted in 2022. Nothing smaller exists, and that is the idea.
 
 > [!NOTE]
-> **Project status: early design.** There is no runnable code yet. We are defining the kernel, the contribution workflow and the first modules. This is the best moment to join the conversation and shape the project.
+> **Project status: early design.** There is no runnable code yet. We are defining the kernel, the contribution workflow and the first modules. This is the best moment to join the conversation and shape the project. See the [roadmap](ROADMAP.md) for what comes next.
 
 ## Why another ERP?
 

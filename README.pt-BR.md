@@ -9,7 +9,7 @@ O QuectoERP é um ERP open source ultra-minimalista, feito de serviços pequenos
 > **quecto** (símbolo **q**, fator **10⁻³⁰**) é o menor prefixo do Sistema Internacional de Unidades, adotado em 2022. Menor que isso não existe, e essa é a ideia.
 
 > [!NOTE]
-> **Situação do projeto: desenho inicial.** Ainda não há código executável. Estamos definindo o kernel, o fluxo de contribuição e os primeiros módulos. É o melhor momento para entrar na conversa e ajudar a moldar o projeto.
+> **Situação do projeto: desenho inicial.** Ainda não há código executável. Estamos definindo o kernel, o fluxo de contribuição e os primeiros módulos. É o melhor momento para entrar na conversa e ajudar a moldar o projeto. Veja o [roadmap](ROADMAP.pt-BR.md) para saber o que vem a seguir.
 
 ## Por que mais um ERP?
 
