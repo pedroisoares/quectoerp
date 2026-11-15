@@ -11,9 +11,9 @@ Esta pasta guarda o logotipo, o favicon e os tokens de cor do QuectoERP. A marca
 
 ## A ideia
 
-**quecto** (símbolo **q**, fator 10⁻³⁰) é o menor prefixo do Sistema Internacional de Unidades. O símbolo da marca é esse **q**, desenhado em traço único e geométrico. O ponto no meio do q é uma partícula: a menor coisa que existe. O nome aparece em minúsculas, `quecto` na cor de tinta, com `ERP` na cor de destaque.
+**quecto** (símbolo **q**, fator 10⁻³⁰) é o menor prefixo do Sistema Internacional de Unidades. O símbolo da marca é esse **q**, desenhado em traço único e geométrico. O ponto no alto, à direita, é o expoente, como em 10⁻³⁰: a notação da ciência e da medida. O nome aparece em minúsculas, `quecto` na cor de tinta, com `ERP` na cor de destaque.
 
-O âmbar lembra os monitores de fósforo da era Clipper, de onde o projeto vem, e mantém a marca longe do azul usado pela maioria dos ERPs e pela família de marcas "Quec-" da Quectel. Não use azul como cor da marca.
+O verde-petróleo passa estabilidade e calma, e mantém a marca longe do azul usado pela maioria dos ERPs e pela família de marcas "Quec-" da Quectel. Não use azul como cor da marca.
 
 ## Arquivos
 
@@ -42,13 +42,12 @@ O âmbar lembra os monitores de fósforo da era Clipper, de onde o projeto vem, 
 
 | Papel | Token | Valor | Observações |
 | --- | --- | --- | --- |
-| Tinta | `--q-color-fg` | `#1C1917` | Texto, fundo do símbolo, nome em fundo claro |
-| Âmbar | `--q-color-accent` | `#F2A900` | Preenchimentos, destaques, símbolo em fundo escuro. Só 2:1 sobre branco: nunca use para texto em fundo claro |
-| Âmbar (gráfico) | `--q-color-accent-graphic` | `#AC7708` | Ícones e detalhes do logotipo sobre branco (3,9:1) |
-| Âmbar (texto) | `--q-color-accent-text` | `#865C01` | Links e texto de destaque sobre branco (5,9:1, WCAG AA) |
-| Papel | `--q-color-paper` | `#FFF8E8` | Fundo quente para páginas de divulgação |
+| Tinta | `--q-color-fg` | `#0F2A2A` | Texto, fundo do símbolo, nome em fundo claro |
+| Petróleo | `--q-color-accent` | `#0F766E` | Botões, links, o `ERP` do logotipo. 5,5:1 sobre branco (WCAG AA para texto) |
+| Menta | `--q-color-accent` (tema escuro) | `#5EEAD4` | O ponto do expoente e o destaque em fundo escuro. Claro demais para texto sobre branco |
+| Névoa | `--q-color-paper` | `#E6F4F1` | Fundo suave para páginas de divulgação e áreas em destaque |
 
-O `tokens/colors.css` também traz as escalas completas de 50 a 950 do âmbar e dos neutros (`--q-brand-*`, `--q-neutral-*`) e as cores de status (`--q-status-success|warning|danger|info`). Os tokens semânticos (`--q-color-*`) mudam para os valores escuros com `prefers-color-scheme` ou `data-theme="dark"`. Use os tokens semânticos nos componentes e as escalas só quando nenhum papel servir.
+O `tokens/colors.css` também traz as escalas completas de 50 a 950 do petróleo e dos neutros (`--q-brand-*`, `--q-neutral-*`) e as cores de status (`--q-status-success|warning|danger|info`). Os tokens semânticos (`--q-color-*`) mudam para os valores escuros com `prefers-color-scheme` ou `data-theme="dark"`. Use os tokens semânticos nos componentes e as escalas só quando nenhum papel servir.
 
 ## Tipografia
 
@@ -66,8 +65,8 @@ O logotipo não depende de fonte: é desenhado em traços vetoriais. Para a inte
 
 Tudo fica no [`brand.json`](brand.json):
 
-- `symbol`: a forma do q. `particle` (ponto no meio, atual), `exponent` (ponto no alto à direita, como o expoente de 10⁻³⁰) ou `limit` (a perna termina num pé, o chão da escala).
-- `palette`: qual paleta de `palettes` usar. `amber` é a atual; `teal` e `indigo` estão prontas como alternativas. Para criar outra, informe `ink`, `accent` e `paper`. O gerador calcula as escalas de 11 tons, escolhe os tons de destaque que respeitam o contraste mínimo e adapta o símbolo para fundo escuro.
+- `symbol`: a forma do q. `exponent` (ponto no alto à direita, como o expoente de 10⁻³⁰, atual), `particle` (ponto no meio do q) ou `limit` (a perna termina num pé, o chão da escala).
+- `palette`: qual paleta de `palettes` usar. `teal` é a atual; `amber` e `indigo` estão prontas como alternativas. Para criar outra, informe `ink`, `accent` e `paper`, e se quiser um `highlight` mais claro para o ponto e para fundos escuros. O gerador calcula as escalas de 11 tons, escolhe os tons de destaque que respeitam o contraste mínimo e adapta o símbolo para fundo escuro.
 - `status`, `typography` e `radius` guardam o resto.
 
 Depois gere de novo:

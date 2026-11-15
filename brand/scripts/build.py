@@ -207,11 +207,15 @@ def main():
     accent_on_light = brand[first_step(brand, white, 3.0)]
     text_on_light = brand[first_step(brand, white, 4.5)]
     accent_on_dark = brand[first_step(brand, ink, 3.0, order=(500, 400, 300, 200))]
+    # Optional brighter companion of the accent, for the dot and for dark backgrounds.
+    highlight = pal.get("highlight", "").upper() or None
+    if highlight and contrast(highlight, ink) >= 3:
+        accent_on_dark = highlight
     light_ink = neutral[50]
     # The symbol tile is dark ink with a white q; on a dark background the tile switches to the accent.
-    dot_on_ink = accent if contrast(accent, ink) >= 3 else brand[300]
+    dot_on_ink = accent if contrast(accent, ink) >= 3 else accent_on_dark
     tile_light = (ink, white, dot_on_ink)
-    tile_dark = (accent, ink, ink) if contrast(accent, ink) >= 3 else (brand[400], ink, ink)
+    tile_dark = (accent if contrast(accent, ink) >= 3 else accent_on_dark, ink, ink)
 
     # logos
     write("logo/quectoerp-logo.svg", lockup_svg(sym, tile_light, ink, accent_on_light))
@@ -253,7 +257,8 @@ def main():
                           "paper": paper},
                 "dark": {"bg": neutral[950], "surface": ink, "fg": light_ink, "fg-muted": neutral[400],
                          "border": neutral[800], "accent": accent_on_dark, "accent-graphic": accent_on_dark,
-                         "accent-text": brand[first_step(brand, neutral[950], 4.5, order=(500, 400, 300, 200))],
+                         "accent-text": accent_on_dark if contrast(accent_on_dark, neutral[950]) >= 4.5
+                                        else brand[first_step(brand, neutral[950], 4.5, order=(500, 400, 300, 200))],
                          "on-accent": ink, "paper": neutral[900]},
             },
         },
