@@ -1,0 +1,66 @@
+name: "🐞 Bug report / Relatar bug"
+description: "Something is not working as expected. / Algo não funciona como deveria."
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **EN:** Thanks for reporting! You can write in English or Brazilian Portuguese. Do not report security vulnerabilities here.
+        **PT-BR:** Obrigado por relatar! Você pode escrever em português ou inglês. Não relate vulnerabilidades de segurança aqui.
+  - type: textarea
+    id: description
+    attributes:
+      label: "What happened? / O que aconteceu?"
+      description: "A clear description of the bug. / Uma descrição clara do bug."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / Passos para reproduzir"
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior / Comportamento esperado"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Version or commit / Versão ou commit"
+      placeholder: "main @ abc1234"
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: "Deployment / Implantação"
+      options:
+        - "Single binary (on-prem) / Binário único (on-prem)"
+        - "Distributed services / Serviços distribuídos"
+        - "Local development / Desenvolvimento local"
+        - "Other / Outro"
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment / Ambiente"
+      description: "OS, .NET, PostgreSQL, browser... / SO, .NET, PostgreSQL, navegador..."
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: "Remove personal or company data. / Remova dados pessoais ou da empresa."
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Checks / Verificações"
+      options:
+        - label: "I searched existing issues. / Procurei nas issues existentes."
+          required: true
+        - label: "I agree to follow the Code of Conduct. / Concordo em seguir o Código de Conduta."
+          required: true
