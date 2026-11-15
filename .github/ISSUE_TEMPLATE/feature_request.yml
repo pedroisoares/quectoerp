@@ -1,0 +1,52 @@
+name: "✨ Feature request / Sugerir funcionalidade"
+description: "Suggest an idea or improvement. / Sugira uma ideia ou melhoria."
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **EN:** You can write in English or Brazilian Portuguese. For large changes, we may ask for an ADR.
+        **PT-BR:** Você pode escrever em português ou inglês. Para mudanças grandes, podemos pedir um ADR.
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / Problema"
+      description: "What business need or pain does this solve? / Que necessidade de negócio ou dor isso resolve?"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposed solution / Solução proposta"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives considered / Alternativas consideradas"
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Area / Área"
+      options:
+        - "Kernel"
+        - "SDK / CLI"
+        - "Business module / Módulo de negócio"
+        - "Tax and legal rules / Regras fiscais e legais"
+        - "Front end / Interface"
+        - "Documentation / Documentação"
+        - "Other / Outro"
+  - type: textarea
+    id: sources
+    attributes:
+      label: "Public sources / Fontes públicas"
+      description: "For legal or tax rules: law, official manual, technical note. / Para regras legais ou fiscais: lei, manual oficial, nota técnica."
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Checks / Verificações"
+      options:
+        - label: "I searched existing issues. / Procurei nas issues existentes."
+          required: true
+        - label: "This proposal does not rely on proprietary material from other ERPs (clean-room). / Esta proposta não se baseia em material proprietário de outros ERPs (clean-room)."
+          required: true

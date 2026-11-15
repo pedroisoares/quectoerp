@@ -1,0 +1,7 @@
+# Code owners / Responsáveis pelo código
+# https://docs.github.com/articles/about-code-owners
+#
+# EN: Owners are requested for review automatically. Add module owners below as the project grows.
+# PT-BR: Os responsáveis são chamados para revisão automaticamente. Acrescente donos de módulos abaixo conforme o projeto crescer.
+
+*       @pedroisoares
