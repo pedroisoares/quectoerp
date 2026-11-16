@@ -4,7 +4,7 @@
 
 Este é um **documento vivo**. Ele mostra onde o projeto está, o que vem a seguir e o que significa "pronto" em cada etapa. Ele muda conforme aprendemos: fases podem ser divididas, juntadas ou reordenadas, e toda mudança passa por um pull request para que o histórico fique visível.
 
-**Última atualização:** 15/11/2026 · **Fase atual:** 0 (Kernel), marco 0.1 (Fundações)
+**Última atualização:** 16/11/2026 · **Fase atual:** 0 (Kernel), marco 0.1 (Fundações)
 
 > [!NOTE]
 > Não há datas, de propósito. O QuectoERP é construído por um time muito pequeno, e cada fase só começa quando a anterior cumpre seus critérios de saída. As datas entram quando houver histórico suficiente para estimar com honestidade.
@@ -53,11 +53,11 @@ Tudo o que um contribuidor precisa antes da primeira linha de código do kernel.
 - [x] Repositório público e licença AGPL-3.0
 - [x] Arquivos bilíngues para contribuidores: README, CONTRIBUTING, Código de Conduta, Política de Segurança, modelos de issue e PR
 - [x] Roadmap vivo (este arquivo)
-- [ ] Identidade visual: logotipo, favicon e paleta de cores, mantidos como arquivos-fonte editáveis
+- [x] Identidade visual: logotipo, favicon e paleta de cores, mantidos como arquivos-fonte editáveis
 - [ ] Verificação do nome antes do lançamento público: domínios, organização no GitHub, busca de marca (INPI)
-- [ ] Processo e modelo de ADR (`docs/adr/`), com os primeiros ADRs registrando as decisões já tomadas: stack, licença, regra clean-room
-- [ ] Convenções do repositório para pessoas e assistentes de IA (`CLAUDE.md`)
-- [ ] CI mínimo no GitHub Actions: build, testes, checagem de DCO
+- [x] Processo e modelo de ADR (`docs/adr/`), com os primeiros ADRs registrando as decisões já tomadas: stack, licença, regra clean-room
+- [x] Convenções do repositório para pessoas e assistentes de IA (`CLAUDE.md`)
+- [x] CI mínimo no GitHub Actions: build, testes, checagem de DCO
 
 **Critério de saída:** quem chega consegue ler a documentação, entender as regras do projeto e abrir um pull request que o CI verifica automaticamente.
 
@@ -70,7 +70,7 @@ Uma a duas semanas para confirmar a stack mínima antes de assumir o compromisso
 - [ ] Outbox no PostgreSQL com `LISTEN/NOTIFY`
 - [ ] Identidade embutida com OpenIddict
 - [ ] Medir os números reais contra o orçamento de recursos
-- [ ] **ADR-0001: Orçamento de recursos**, com as metas calibradas pelas medições
+- [ ] **ADR: Orçamento de recursos**, com as metas calibradas pelas medições
 
 **Critério de saída:** as metas do orçamento foram cumpridas ou revisadas com evidência, e as escolhas de stack foram confirmadas ou substituídas por ADRs.
 
@@ -161,3 +161,4 @@ Correm em paralelo a todas as fases e são revisadas ao fim de cada marco.
 | Data | Mudança |
 | --- | --- |
 | 15/11/2026 | Primeira versão do roadmap |
+| 16/11/2026 | Marco 0.1: identidade visual, processo de ADR com os ADRs 0001 a 0004, `CLAUDE.md` e CI entregues. O ADR do orçamento de recursos deixa de ter número fixo, porque 0001 a 0004 já estão em uso |
