@@ -1,0 +1,12 @@
+<Project>
+  <!--
+    Central package management: every NuGet version lives here.
+    A new runtime dependency needs an ADR (see docs/adr/README.md). Test-only packages do not.
+  -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup Label="Tests">
+    <PackageVersion Include="xunit.v3" Version="4.0.3" />
+  </ItemGroup>
+</Project>

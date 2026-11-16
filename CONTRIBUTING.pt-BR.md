@@ -53,11 +53,18 @@ Pull requests que descumprirem essa regra serão fechados.
 
 ### Ambiente local
 
-As ferramentas de build ainda estão sendo definidas. Quando o primeiro código entrar, esta seção vai listar os comandos exatos. Os pré-requisitos previstos são:
+Você precisa do [.NET SDK](https://dotnet.microsoft.com/) 10 (a versão exata fica fixada no `global.json`) e do Python 3 se for alterar os arquivos da marca. Na raiz do repositório:
 
-- [.NET SDK](https://dotnet.microsoft.com/) (versão fixada no `global.json`)
-- [PostgreSQL](https://www.postgresql.org/) ou Docker
-- Opcional: [NATS](https://nats.io/), toolchain do Rust (motor tributário), Node.js (front-end)
+```bash
+dotnet restore
+dotnet format --verify-no-changes   # checa o estilo; rode sem a opção para corrigir
+dotnet build --configuration Release
+dotnet test --configuration Release
+```
+
+O CI de todo pull request roda os mesmos comandos, verifica se cada commit está assinado (DCO) e se os arquivos de `brand/` batem com o `brand/brand.json`. Hoje os testes verificam as convenções do repositório: documentos bilíngues, links funcionando, o índice de ADRs e o roadmap.
+
+Conforme o kernel chegar, você também vai precisar do [PostgreSQL](https://www.postgresql.org/) ou do Docker e, opcionalmente, do [NATS](https://nats.io/), da toolchain do Rust (motor tributário) e do Node.js (front-end).
 
 ### Diretrizes de código
 

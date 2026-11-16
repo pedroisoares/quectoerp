@@ -53,11 +53,18 @@ Pull requests that break this rule will be closed.
 
 ### Local setup
 
-The build tooling is still being defined. When the first code lands, this section will list the exact commands. The expected prerequisites are:
+You need the [.NET SDK](https://dotnet.microsoft.com/) 10 (the exact version is pinned in `global.json`) and Python 3 if you change the brand files. From the repository root:
 
-- [.NET SDK](https://dotnet.microsoft.com/) (version pinned in `global.json`)
-- [PostgreSQL](https://www.postgresql.org/) or Docker
-- Optional: [NATS](https://nats.io/), Rust toolchain (tax engine), Node.js (front end)
+```bash
+dotnet restore
+dotnet format --verify-no-changes   # style check; run without the flag to fix
+dotnet build --configuration Release
+dotnet test --configuration Release
+```
+
+The CI on every pull request runs the same commands, checks that each commit is signed off (DCO) and that the files in `brand/` match `brand/brand.json`. Today the tests check the repository conventions: bilingual documents, working links, the ADR index and the roadmap.
+
+As the kernel arrives you will also need [PostgreSQL](https://www.postgresql.org/) or Docker and, optionally, [NATS](https://nats.io/), the Rust toolchain (tax engine) and Node.js (front end).
 
 ### Code guidelines
 
