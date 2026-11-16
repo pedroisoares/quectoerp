@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Checks the repository conventions that CONTRIBUTING.md and docs/adr/README.md describe:
+    bilingual documentation, working relative links and a consistent ADR index.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>QuectoErp.Repository.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" />
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

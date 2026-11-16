@@ -1,0 +1,17 @@
+<Project>
+  <!-- Settings shared by every project in the repository. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <Deterministic>true</Deterministic>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Authors>QuectoERP contributors</Authors>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/pedroisoares/quectoerp</RepositoryUrl>
+  </PropertyGroup>
+</Project>

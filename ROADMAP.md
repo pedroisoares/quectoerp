@@ -4,7 +4,7 @@
 
 This is a **living document**. It says where the project is, what comes next and what "done" means for each step. It changes as we learn: phases can be split, merged or reordered, and every change is made through a pull request so the history stays visible.
 
-**Last updated:** 2026-11-15 · **Current phase:** 0 (Kernel), milestone 0.1 (Foundations)
+**Last updated:** 2026-11-16 · **Current phase:** 0 (Kernel), milestone 0.1 (Foundations)
 
 > [!NOTE]
 > There are no dates on purpose. QuectoERP is built by a very small team, and each phase starts only when the previous one meets its exit criteria. Dates will be added when there is enough history to estimate honestly.
@@ -53,11 +53,11 @@ Everything a contributor needs before the first line of kernel code.
 - [x] Public repository and AGPL-3.0 license
 - [x] Bilingual contributor files: README, CONTRIBUTING, Code of Conduct, Security policy, issue and PR templates
 - [x] Living roadmap (this file)
-- [ ] Brand identity: logo, favicon and color palette, kept as editable source files
+- [x] Brand identity: logo, favicon and color palette, kept as editable source files
 - [ ] Name checks before the public launch: domains, GitHub organization, trademark search (INPI)
-- [ ] ADR process and template (`docs/adr/`), with the first ADRs recording the decisions already made: stack, license, clean-room rule
-- [ ] Repository conventions for humans and AI assistants (`CLAUDE.md`)
-- [ ] Minimal CI on GitHub Actions: build, tests, DCO check
+- [x] ADR process and template (`docs/adr/`), with the first ADRs recording the decisions already made: stack, license, clean-room rule
+- [x] Repository conventions for humans and AI assistants (`CLAUDE.md`)
+- [x] Minimal CI on GitHub Actions: build, tests, DCO check
 
 **Exit criteria:** a newcomer can read the docs, understand the project's rules, and open a pull request that CI checks automatically.
 
@@ -70,7 +70,7 @@ One to two weeks to confirm the minimal stack before committing to it.
 - [ ] Outbox in PostgreSQL with `LISTEN/NOTIFY`
 - [ ] Embedded identity with OpenIddict
 - [ ] Measure the real numbers against the resource budget
-- [ ] **ADR-0001: Resource budget**, with the targets calibrated by the measurements
+- [ ] **ADR: Resource budget**, with the targets calibrated by the measurements
 
 **Exit criteria:** the budget targets are either met or revised with evidence, and the stack choices are confirmed or replaced through ADRs.
 
@@ -161,3 +161,4 @@ These run alongside every phase and are reviewed at the end of each milestone.
 | Date | Change |
 | --- | --- |
 | 2026-11-15 | First version of the roadmap |
+| 2026-11-16 | Milestone 0.1: brand identity, ADR process with ADRs 0001 to 0004, `CLAUDE.md` and CI delivered. The resource budget ADR no longer has a fixed number, because 0001 to 0004 are taken |

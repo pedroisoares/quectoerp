@@ -38,7 +38,7 @@ QuectoERP is an ultra-minimal, open source ERP built from tiny, fast services wi
 | Front end | React + TypeScript, screens generated from metadata, with a bundle budget |
 | Observability | OpenTelemetry |
 
-The stack is still under discussion. Changes are recorded as Architecture Decision Records (ADRs).
+The stack is recorded in [ADR-0004](docs/adr/0004-technology-stack.md) and will be confirmed by the proof of concept in milestone 0.2. Every change goes through an [Architecture Decision Record](docs/adr/README.md) (ADR).
 
 ## Initial resource budget (per service)
 
